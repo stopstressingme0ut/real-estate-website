@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,14 +13,17 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome cdn -->
-    <script src="https://kit.fontawesome.com/edbd0a6e56.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css" type="text/css">    
+    
     <script>
         tailwind.config = {
           theme: {
             extend: {
               colors: {
                 clifford: '#da373d',
+                primary: '#ABEF5F',
+                secondary:'rgba(171, 239, 95, 0.6)',
+                heading: '#212121'
               }
             }
           }
@@ -28,12 +31,84 @@
     </script>
 
     <style>
-    .manrope-font {
+    .manrope-font{
         font-family: "Manrope", sans-serif;
     }
     </style>
 </head>
-<body>
+<body class="manrope-font">
+  <header class="bg-gradient-to-t from-slate-50 to-slate-100">
+    <!-- navbar starts here -->
+     <nav class="container mx-auto lg:w-4/5 sm:w-11/12">
+      <div class="navbar  pt-5 pb-5">
+        <div class="navbar-start flex gap-1">
+          <div>
+            <i class="fa-regular fa-arrow-up-right size-6 border border-none rounded-full bg-primary pl-1.5 pt-1"></i>          
+          </div>
+          <div>
+            <a href="#" class="text-2xl font-extrabold">Rinterio</a>
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 font-[500]">
+            <li class="font-bold hover: duration-300 ease-in-out"><a>Home</a></li>
+            <li class="hover:font-bold duration-300 ease-in-out"><a>Services</a></li>
+            <li class="hover:font-bold duration-300 ease-in-out"><a>Portfolio</a></li>
+            <li class="hover:font-bold duration-300 ease-in-out"><a>Blogs</a></li>
+            <li class="hover:font-bold duration-300 ease-in-out"><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="hidden lg:flex gap-3 items-center">
+            <div>
+              <i class="fa-light fa-magnifying-glass size-10 border border-solid rounded-full bg-white pl-3 pt-3"></i>
+            </div>
+            <div>
+              <i class="fa-light fa-cart-shopping size-10 border border-solid rounded-full bg-white pl-2.5 pt-3"></i>
+            </div>
+            <div>
+               <a class="btn bg-primary rounded-full font-[800] hover:bg-primary">Book Consult<i class="fa-regular fa-arrow-up-right size-7 border border-none rounded-full bg-black pt-2" style="color: white;"></i></a>
+               
+            </div>
+          </div>          
+        </div>
+
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="size-10 border border-solid rounded-full bg-white pl-3 pt-1.5 lg:hidden">
+                <i class="fa-solid fa-bars"></i>                
+              </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-[400] right-0 gap-3">
+              <li class="font-bold hover: duration-300 ease-in-out"><a>Home</a></li>
+              <li class="hover:font-bold duration-300 ease-in-out"><a>Services</a></li>
+              <li class="hover:font-bold duration-300 ease-in-out"><a>Portfolio</a></li>
+              <li class="hover:font-bold duration-300 ease-in-out"><a>Blogs</a></li>
+              <li class="hover:font-bold duration-300 ease-in-out"><a>Contact Us</a></li>
+            </ul>
+          </div>
+       </div>
+     </nav>
     
+     <!-- Banner part starts here -->
+      <section class="container mx-auto lg:w-4/5 sm:w-11/12">
+        <div class="w-11/12 lg:w-4/5 mx-auto text-center pb-8">
+          <img class="w-auto mx-auto" src="./assets/banner.png" alt="A picture of Duplex Building">
+          <h1 class="text-4xl lg:text-5xl text-heading font-[800] pt-5 pb-8">A barn house of this design has a striking appearance</h1>
+          <p class="font-[500] text-sm pb-5 lg:text-lg">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+          <button class="btn w-full rounded-full bg-secondary hover:bg-secondary font-bold border-solid lg:w-40">View Details<i class="fa-regular fa-arrow-up-right size-7 border border-none rounded-full bg-primary pt-2"></i>          
+          </button>
+        </div>
+      </section>
+  </header>
+
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
