@@ -25,7 +25,11 @@
                 primary: '#ABEF5F',
                 secondary:'rgba(171, 239, 95, 0.6)',
                 heading: '#212121',
-                background:'#E9E9E9'
+                background:'#E9E9E9',
+                card1: '#E7C1D3',
+                card2: '#EFDA6E',
+                card3: '#A4DAC3',
+                card4: '#77AAEA'
               }
             }
           }
@@ -149,12 +153,12 @@
       </div>
     </div>
     <div class="px-5">
-      <img class="w-full rounded-none lg:h-[525px]" src="./assets/Rectangle.png" alt="" />
+      <img class="object-none sm:h-52 sm:w-72 rounded-2xl lg:h-[525px] lg:w-full" src="./assets/Rectangle.png" alt="" />
     </div>
   </section>
 
-  <section
-        class="container mx-auto lg:w-4/5 sm:w-11/12 bg-white rounded-2xl p-10 text-center mt-12">
+  <section class="px-5">
+       <div class="container mx-auto lg:w-4/5 sm:w-11/12 bg-white rounded-2xl p-10 text-center mt-10">
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-10">
           <div class="space-y-2">
             <i class="fa-light fa-message-heart fa-2xl size-8"></i>                        
@@ -162,8 +166,7 @@
             <p class="text-gray-600">Happy Client Review</p>
           </div>
           <div class="space-y-2">
-            <i class="fa-light fa-ballot-check fa-2xl size-7
-            "></i>
+            <i class="fa-light fa-ballot-check fa-2xl size-8"></i>
             <h3 class="text-3xl font-bold">50+</h3>
             <p class="text-gray-600">Work Departments</p>
           </div>
@@ -178,7 +181,106 @@
             <p class="text-gray-600">Staff Members</p>
           </div>
         </div>
+      </div>
+  </section>
+
+  <section class="container mx-auto lg:w-4/5 sm:w-11/12 pt-20 pb-10 px-5">
+    <div class="text-center space-y-5 mx-auto pb-10">
+      <button class="btn rounded-full font-extrabold bg-white hover:bg-white"><i class="fa-solid fa-arrow-right"></i>
+        How we works
+      </button>
+      <h1 class="text-3xl lg:text-4xl font-black">Our Works Process</h1>
+      <p class="text-gray-600 px-5 lg:px-32">
+        The barn house captivates with its blend of rustic charm and modern
+        sophistication, featuring weathered wood, sleek metal accents.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-5">
+      <div class="space-y-2 bg-card1 p-7 rounded-2xl">
+        <img src="./assets/concept.png" alt="" />
+        <h4 class="text-xl font-bold">Concept</h4>
+        <p class="text-gray-500">
+          The barn house captivates with its blend of rustic charm and
+          modern.
+        </p>
+      </div>
+      <div class="space-y-2 bg-card2 p-7 rounded-2xl">
+        <img src="./assets/flow-chart.png" alt="" />
+        <h4 class="text-xl font-bold">Design Process</h4>
+        <p class="text-gray-500">
+          The barn house captivates with its blend of rustic charm and
+          modern.
+        </p>
+      </div>
+      <div class="space-y-2 bg-card3 p-7 rounded-2xl">
+        <img src="./assets/vision.png" alt="" />
+        <h4 class="text-xl font-bold">Supervision</h4>
+        <p class="text-gray-500">
+          The barn house captivates with its blend of rustic charm and
+          modern.
+        </p>
+      </div>
+      <div class="space-y-2 bg-card4 p-7 rounded-2xl">
+        <img src="./assets/budget-planning.png" alt="" />
+        <h4 class="text-xl font-bold">Budget Planning</h4>
+        <p class="text-gray-500">
+          The barn house captivates with its blend of rustic charm and
+          modern.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover pt-10 pb-20"
+      >
+        <div class="container mx-auto lg:w-4/5 sm:w-11/12">
+          <div class=" text-center space-y-5 lg:w-8/12 mx-auto py-10">
+            <button class="btn rounded-full font-extrabold bg-secondary hover:bg-secondary"><i class="fa-solid fa-arrow-right"></i>Let's Connect</button>
+            <h1 class="text-3xl lg:text-4xl text-black font-extrabold">
+              Let's Discuss Next Project
+            </h1>
+            <p class="text-gray-700 px-10">
+              The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+            </p>
+          </div>
+          <div>
+            <div class="mx-auto text-center grid grid-col-1 lg:grid-cols-2 lg:gap-4 lg:px-48 px-5">
+             <input type="text" placeholder="First Name*" required class="p-3 items-center rounded-full mb-3 border border-gray-500">
+              <input
+                type="text"
+                placeholder="Last Name" required
+                class="p-3 lg:py-3 lg:pl-3 lg:pr-32 rounded-full mb-3 border border-gray-500"
+              />
+            </div>
+            <div class="mx-auto text-center grid grid-cols-1 lg:grid-cols-2 lg:px-48 px-5">
+              <input
+                type="number"
+                placeholder="Your Number*" required
+                class="p-3 lg:py-3 lg:pl-5 lg:pr-32 rounded-full mb-5 border border-gray-500"
+              />
+              <input
+                type="email"
+                placeholder="Email Number*" required
+                class="p-3 lg:py-3  rounded-full mb-3 border border-gray-500"
+              />
+            </div>
+            <div class="mx-auto text-center">
+              <textarea
+                name=""
+                id=""
+                placeholder="Write your messages here"
+                class="h-[150px] w-[300px] lg:w-[680px] p-3 rounded-xl border border-gray-500"
+              ></textarea>
+            </div>
+            <div class="text-center mt-5">
+              <button
+                class="btn bg-primary rounded-full font-[800] hover:bg-primary">Send Mail <i class="fa-regular fa-arrow-up-right size-7 border border-none rounded-full bg-black pt-2" style="color: white;"></i></button>
+            </div>
+          </div>
+        </div>
       </section>
+
   </main>
 
     <footer>
