@@ -103,8 +103,17 @@
           <img class="w-auto mx-auto" src="./assets/banner.png" alt="A picture of Duplex Building">
           <h1 class="text-4xl lg:text-5xl text-heading font-[800] pt-5 pb-8">A barn house of this design has a striking appearance</h1>
           <p class="font-[500] text-sm pb-5 lg:text-sm">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-          <button class="btn w-full rounded-full bg-secondary hover:bg-secondary font-bold border-solid lg:w-40">View Details<i class="fa-regular fa-arrow-up-right size-7 border border-none rounded-full bg-primary pt-2"></i>          
-          </button>
+
+            <button class="btn w-full rounded-full bg-secondary hover:bg-secondary font-bold border-solid lg:w-40" onclick="my_modal_2.showModal()">View Details<i class="fa-regular fa-arrow-up-right size-7 border border-none rounded-full bg-primary pt-2"></i></button>
+            <dialog id="my_modal_2" class="modal">
+              <div class="modal-box">
+                <h3 class="text-lg font-bold">Wait a few sec!</h3>
+                <p class="py-4">You're redirecting to a new page.</p>
+              </div>
+              <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+              </form>
+            </dialog>
         </div>
       </section>
   </header>
@@ -233,7 +242,102 @@
     </div>
   </section>
 
-  <section class="bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover pt-10 pb-20"
+  <section class="bg-white py-10">
+    <div class="container mx-auto lg:w-4/5 sm:w-11/12">
+        <div class="flex flex-col items-center gap-3 text-center pb-6">
+          <button class="btn rounded-full font-extrabold bg-secondary hover:bg-secondary"><i class="fa-solid fa-arrow-right"></i>Explore our Latest works</button>
+            <h2 class="text-xl lg:text-4xl font-bold">Our Latest Portfolio</h2>
+            <p class="text-black lg:px-44 px-10 lg::px-72">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 px-3">
+            <div class="border lg:col-span-8 rounded-lg flex flex-col lg:flex-row gap-3 p-3">
+                <img src="./assets/img1.png" class="w-full h-full" alt="">
+                <div class="flex flex-col justify-center gap-4 rounded-lg pl-2">
+                    <h1 class="text-lg font-bold">Commercial</h1>
+                    <p class="">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic
+                    charm and modern .</p>
+                    <button class="flex flex-row gap-1 text-lg font-bold">View
+                      Details<i class="fa-regular fa-arrow-up-right size-7 border border-none rounded-full bg-primary pt-1.5 " style="color: white;"></i>  
+                  </button>
+                </div>
+            </div>
+            <div class="border lg:col-span-4 rounded-lg p-3">
+                <img src="./assets/img2.png" class="w-full h-full" alt="">
+            </div>
+
+            <div class="border hidden lg:block lg:col-span-3 rounded-lg p-3">
+                <img src="./assets/img3.png" class="w-full h-full" alt="">
+            </div>
+            <div class="border lg:hidden rounded-lg p-3">
+                <img src="./assets/img5.png" class="w-full h-full" alt="">
+            </div>
+
+            <div class="border lg:col-span-6 rounded-lg flex flex-col lg:flex-row gap-3 p-3">
+                <img src="./assets/img4.png" class="w-full md:w-1/2 lg:w-full h-full" alt="">
+                <div class="flex flex-col justify-center gap-4 rounded-lg pl-2">
+                    <h1 class="text-xl font-bold">Commercial</h1>
+                    <p >The barn house captivates with its blend of rustic charm and modern.</p>
+                    <button class="flex flex-row gap-1 text-lg font-bold">View
+                        Details<i class="fa-regular fa-arrow-up-right size-7 border border-none rounded-full bg-primary pt-1.5 " style="color: white;"></i>  
+                    </button>
+                </div>
+            </div>
+            <div class="border hidden lg:block lg:col-span-3 rounded-lg p-3">
+                <img src="./assets/img5.png" class="w-full h-full" alt="">
+            </div>
+            <div class="border lg:hidden rounded-lg p-3">
+                <img src="./assets/img3.png" class="w-full h-full" alt="">
+            </div>
+            <div class="border lg:hidden rounded-lg p-3">
+                <img src="./assets/img5.png" class="w-full h-full" alt="">
+            </div>
+        </div>
+    </div>
+ </section>
+
+ <section class="bg-gradient-to-t from-slate-50 to-slate-100">
+  <div class="flex flex-col items-center gap-3 text-center pt-5 ">
+    <button class="btn rounded-full font-extrabold bg-secondary hover:bg-secondary"><i class="fa-solid fa-arrow-right"></i>Explore Your Options</button>
+      <h2 class="text-xl lg:text-4xl font-bold">The Perfect Place to Manage Your Property</h2>
+      <p class="text-black lg:px-72 px-10 lg::px-72">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+  </div>
+  <div class="container mx-auto lg:w-4/5 sm:w-11/12 border border-gray-300 bg-slate-100 rounded-2xl mt-5 p-3">
+    <div class="carousel lg:w-[100%] lg:h-[600px] bg-transparent">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img
+          src="./assets/p2.jpg"
+          class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide3" class="bg-transparent" style="color: green;">❮</a>
+          <a href="#slide2" class="bg-transparent" style="color: green;">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img
+          src="./assets/p3.jpg"
+          class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide1" class="bg-transparent" style="color: green;">❮</a>
+          <a href="#slide3" class="bg-transparent" style="color: green;">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img
+          src="./assets/p1.jpeg"
+          class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide2" class="bg-transparent" style="color: green;">❮</a>
+          <a href="#slide1" class="bg-transparent" style="color: green;">❯</a>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+ </section>
+
+
+
+  <section class="bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover pt-5 pb-20"
       >
         <div class="container mx-auto lg:w-4/5 sm:w-11/12">
           <div class=" text-center space-y-5 lg:w-8/12 mx-auto py-10">
@@ -275,8 +379,17 @@
               ></textarea>
             </div>
             <div class="text-center mt-5">
-              <button
-                class="btn bg-primary rounded-full font-[800] hover:bg-primary">Send Mail <i class="fa-regular fa-arrow-up-right size-7 border border-none rounded-full bg-black pt-2" style="color: white;"></i></button>
+            <button class="btn bg-primary rounded-full font-[800] hover:bg-primary" onclick="my_modal_3.showModal()">Send 
+              Mail <i class="fa-regular fa-arrow-up-right size-7 border border-none rounded-full bg-black pt-2" style="color: white;"></i></button>
+              <dialog id="my_modal_3" class="modal">
+                <div class="modal-box">
+                  <form method="dialog">
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                  </form>
+                  <h3 class="text-lg font-bold">Hello there!</h3>
+                  <p class="py-4">Your mail have been sent successfully!</p>
+                </div>
+              </dialog>
             </div>
           </div>
         </div>
